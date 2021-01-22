@@ -42,7 +42,6 @@ textarea:focus, input:focus, select:focus, button:focus {
 
 p {
   font: 400 1.8rem "Open Sans", sans-serif;
-  line-height: 3.2rem;
   margin: 0;
   ${(props) => props.theme.colors.text};
 }

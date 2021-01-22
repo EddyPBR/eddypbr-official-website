@@ -16,12 +16,12 @@ export default createGlobalStyle`
 
   html,
   body,
-  #root {
+  #__next {
     min-height: 100vh;
   }
 
   body {
-    background: ${props => props.theme.colors.background};
+    background: ${(props) => props.theme.colors.background};
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
@@ -31,7 +31,7 @@ export default createGlobalStyle`
   button,
   textarea {
     font: 400 1.8rem "Roboto", sans-serif;
-    color: ${props => props.theme.colors.title};
+    color: ${(props) => props.theme.colors.title};
 }
 
 textarea:focus, input:focus, select:focus, button:focus {
@@ -43,14 +43,16 @@ textarea:focus, input:focus, select:focus, button:focus {
 p {
   font: 400 1.8rem "Open Sans", sans-serif;
   line-height: 3.2rem;
-  ${props => props.theme.colors.text};
+  margin: 0;
+  ${(props) => props.theme.colors.text};
 }
 
 h1, h2, h3, h4, h5, h6 {
   font: 700 3.6rem "Roboto", sans-serif;
+  margin: 0;
 }
 
-@media (max-width: 1170px) {
+@media (max-width: 117rem) {
   p {
     font: 400 1.6rem "Open Sans", sans-serif;
   }
@@ -60,7 +62,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-@media (min-width: 700px) {
+@media (min-width: 70rem) {
   :root {
     font-size: 62.5%;
   }

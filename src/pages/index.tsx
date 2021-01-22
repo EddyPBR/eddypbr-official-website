@@ -3,6 +3,9 @@ import Head from "next/head";
 
 import { Header, Container } from "../styles/pages/Home";
 import ButtonLinkList from "../components/ButtonLinkList";
+import Section from "../components/Section";
+
+import ManAnalyzingDataURL from "../assets/man-analyzing-data.png";
 
 const Home: React.FC = () => {
   return (
@@ -30,6 +33,20 @@ const Home: React.FC = () => {
           />
         </Container>
       </Header>
+
+      <Section
+        title="Edvaldo Junior"
+        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+        facilisis pellentesque pellentesque. Aliquam sagittis congue
+        justo, et tristique dui eleifend tincidunt. Lorem ipsum dolor sit
+        amet, consectetur adipiscing elit. Praesent facilisis pellentesque
+        pellentesque. Aliquam sagittis congue justo."
+        btnLink="/sobre"
+        btnText="Saiba mais"
+        isBlank={false}
+        imageURL={ManAnalyzingDataURL}
+      />
+      
     </>
   );
 };

@@ -1,18 +1,20 @@
-import React from 'react';
+import React, { AnchorHTMLAttributes } from "react";
 
-import { LinkButton } from './styles';
+import { LinkButton } from "./styles";
 
-interface IButton {
+interface IButton extends AnchorHTMLAttributes<HTMLAnchorElement> {
   href?: string;
   isFormButton: true | false;
 }
 
 const Button: React.FC<IButton> = (props) => {
-  const { href, isFormButton } = props;
+  const { href, isFormButton, rel, target } = props;
 
-  return <LinkButton href={href}>
-    {props.children}
-  </LinkButton>
-}
+  return (
+    <LinkButton href={href} rel={rel} target={target}>
+      {props.children}
+    </LinkButton>
+  );
+};
 
 export default Button;

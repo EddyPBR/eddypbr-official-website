@@ -14,7 +14,7 @@ interface ISection {
 
 const Section: React.FC<ISection> = (props) => {
   const { title, text, imageURL, btnLink, btnText, isBlank = false } = props;
-  
+
   return (
     <SectionContent>
       <Container>
@@ -24,7 +24,14 @@ const Section: React.FC<ISection> = (props) => {
         <Column>
           <h1>{title}</h1>
           <p>{text}</p>
-          <Button isFormButton={false} href={btnLink}>{btnText}</Button>
+          <Button
+            isFormButton={false}
+            href={btnLink}
+            rel={isBlank ? "noopener noreferrer external" : null}
+            target={isBlank ? "blank" : null}
+          >
+            {btnText}
+          </Button>
         </Column>
       </Container>
     </SectionContent>

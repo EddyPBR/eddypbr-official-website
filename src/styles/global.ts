@@ -32,38 +32,38 @@ export default createGlobalStyle`
   textarea {
     font: 400 1.8rem "Roboto", sans-serif;
     color: ${(props) => props.theme.colors.title};
-}
+  }
 
-textarea:focus, input:focus, select:focus, button:focus {
-  box-shadow: 0 0 0 0;
-  border: 0 none;
-  outline: 0;
-}
+  textarea:focus, input:focus, select:focus, button:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+  }
 
-p {
-  font: 400 1.8rem "Open Sans", sans-serif;
-  margin: 0;
-  ${(props) => props.theme.colors.text};
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font: 700 3.6rem "Roboto", sans-serif;
-  margin: 0;
-}
-
-@media (max-width: 117rem) {
   p {
-    font: 400 1.6rem "Open Sans", sans-serif;
+    font: 400 1.8rem "Open Sans", sans-serif;
+    margin: 0;
+    color: ${(props) => props.theme.colors.text};
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font: 700 3.2rem "Roboto", sans-serif;
+    font: 700 3.6rem "Roboto", sans-serif;
+    margin: 0;
   }
-}
 
-@media (min-width: 70rem) {
-  :root {
-    font-size: 62.5%;
+  @media (max-width: 117rem) {
+    p {
+      font: 400 1.6rem "Open Sans", sans-serif;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font: 700 3.2rem "Roboto", sans-serif;
+    }
   }
-}
+
+  @media (min-width: 70rem) {
+    :root {
+      font-size: 62.5%;
+    }
+  }
 `;

@@ -11,26 +11,26 @@ export const Header = styled.header`
   display: flex;
   justify-content: center;
 
-  h1 {
+  > h1 {
     font: 3.2rem "Roboto" bold;
     color: ${(props) => props.theme.colors.title};
     margin-top: 3.6rem;
   }
 
-  h2 {
+  > h2 {
     margin-top: 1.5rem;
     font: 2.4rem "Roboto";
     color: ${(props) => props.theme.colors.text};
   }
 
-  img {
+  > img {
     height: 12rem;
     width: 12rem;
     border-radius: 50%;
     opacity: 0.9;
   }
 
-  ul {
+  > ul {
     margin: 4.8rem 0;
   }
 `;

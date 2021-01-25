@@ -4,6 +4,8 @@ import Head from "next/head";
 import { Header, Container } from "../styles/pages/Home";
 import ButtonLinkList from "../components/ButtonLinkList";
 import Section from "../components/Section";
+import Article from "../components/Article";
+import Project from "../components/Project";
 
 import ManAnalyzingDataURL from "../assets/man-analyzing-data.png";
 import AriusHelpLogoURL from "../assets/arius-help-logo.png";
@@ -56,6 +58,23 @@ const Home: React.FC = () => {
         isBlank={false}
         imageURL={ManAnalyzingDataURL}
       />
+
+      <Article
+        title="Conheça meus projetos"
+        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis
+        dapibus dui, at lobortis lacus. Etiam vitae neque dui. Nullam pulvinar
+        mattis tortor."
+      >
+        <Project
+          title="Project Advisor 3000"
+          text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis
+            dapibus dui, at lobortis lacus. Etiam vitae neque dui. Nullam
+            pulvinar mattis tortor. Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit. In quis dapibus dui, at lobortis lacus. Etiam
+            vitae neque dui. Nullam pulvinar mattis tortor."
+          img_url="https://raw.githubusercontent.com/EddyPBR/project-advisor-3000/master/frontend/src/assets/main-image.png"
+        />
+      </Article>
 
       <Section
         title="Árius Help Startup"

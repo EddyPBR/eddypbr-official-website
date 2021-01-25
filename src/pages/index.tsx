@@ -6,6 +6,7 @@ import ButtonLinkList from "../components/ButtonLinkList";
 import Section from "../components/Section";
 
 import ManAnalyzingDataURL from "../assets/man-analyzing-data.png";
+import AriusHelpLogoURL from "../assets/arius-help-logo.png";
 
 const Home: React.FC = () => {
   return (
@@ -23,12 +24,21 @@ const Home: React.FC = () => {
           <h1>Edvaldo Junior</h1>
           <h2>Desenvolvedor Fullstack</h2>
 
-          <ButtonLinkList 
+          <ButtonLinkList
             buttons={[
               { href: "https://github.com/EddyPBR", icon: "github" },
-              { href: "https://www.instagram.com/edvaldo_junior_dev/", icon: "instagram" },
-              { href: "https://br.linkedin.com/in/edvaldojuniordev", icon: "linkedin" },
-              { href: "https://www.facebook.com/edvaldo.junior.906638", icon: "facebook" },
+              {
+                href: "https://www.instagram.com/edvaldo_junior_dev/",
+                icon: "instagram",
+              },
+              {
+                href: "https://br.linkedin.com/in/edvaldojuniordev",
+                icon: "linkedin",
+              },
+              {
+                href: "https://www.facebook.com/edvaldo.junior.906638",
+                icon: "facebook",
+              },
             ]}
           />
         </Container>
@@ -46,7 +56,19 @@ const Home: React.FC = () => {
         isBlank={false}
         imageURL={ManAnalyzingDataURL}
       />
-      
+
+      <Section
+        title="Árius Help Startup"
+        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis
+          dapibus dui, at lobortis lacus. Etiam vitae neque dui. Nullam
+          pulvinar mattis tortor. Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit. In quis dapibus dui, at lobortis lacus. Etiam
+          vitae neque dui. Nullam pulvinar mattis tortor."
+        btnLink="https://www.instagram.com/ariushelp/"
+        btnText="Saiba mais"
+        isBlank={true}
+        imageURL={AriusHelpLogoURL}
+      />
     </>
   );
 };

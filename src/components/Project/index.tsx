@@ -1,9 +1,11 @@
 import React from "react";
+import { FiArrowRightCircle } from "react-icons/fi";
 import {
   ProjectBox,
   ContentColumn,
   FigureColumn,
   ProjectLink,
+  ToProjectLink,
   Row
 } from "./styles";
 import { FiGithub, FiFigma, FiGlobe } from "react-icons/fi";
@@ -29,6 +31,16 @@ const Project: React.FC<IProjectProps> = (props) => {
       <ContentColumn>
         <h1>{title}</h1>
         <p>{text}</p>
+        {project_link && (
+          <ToProjectLink
+            href={project_link}
+            rel="noopener noreferrer external"
+            target="_blank"
+          >
+            <span>Ver portfólio</span>
+            <FiArrowRightCircle />
+          </ToProjectLink>
+        )}
         <Row>
           {github_url && (
             <ProjectLink

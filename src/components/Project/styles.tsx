@@ -44,13 +44,15 @@ export const ContentColumn = styled.div`
 
   h1 {
     font-size: 3rem;
-    color: ${(props) => props.theme.colors.aquagreen};
+    color: ${(props) => props.theme.colors.green};
     margin-top: 0.5rem;
   }
 
   p {
     font-size: 1.6rem;
     margin-top: 2rem;
+    line-height: 2.8rem;
+    font-weight: 500;
   }
 
   // Change the Row styles
@@ -99,7 +101,7 @@ export const Row = styled.div`
 export const ProjectLink = styled.a`
   width: 4.2rem;
   height: 4.2rem;
-  border: 0.2rem solid ${(props) => props.theme.colors.aquagreen};
+  border: 0.2rem solid ${(props) => props.theme.colors.green};
   border-radius: 50%;
   margin: 0 1.4rem;
 
@@ -109,7 +111,7 @@ export const ProjectLink = styled.a`
   align-items: center;
 
   svg {
-    color: ${(props) => props.theme.colors.aquagreen};
+    color: ${(props) => props.theme.colors.green};
     width: 2.6rem;
     height: 2.6rem;
   }
@@ -123,7 +125,7 @@ export const ProjectLink = styled.a`
   }
 
   :hover > span {
-    color: ${(props) => props.theme.colors.aquagreen};
+    color: ${(props) => props.theme.colors.green};
   }
 
   @media (max-width: 1170px) {
@@ -132,7 +134,6 @@ export const ProjectLink = styled.a`
     }
   }
 `;
-
 
 
 export const StyledNextLink = styled(NextLink)`
@@ -145,7 +146,7 @@ export const StyledNextLink = styled(NextLink)`
   align-items: center;
 
   font: 400 1.8rem "Roboto", sans-serif;
-  color: ${(props) => props.theme.colors.aquagreen};
+  color: ${(props) => props.theme.colors.green};
 
   span {
     font: 400 1.8rem "Roboto", sans-serif;
@@ -160,5 +161,43 @@ export const StyledNextLink = styled(NextLink)`
 
   :hover {
     filter: brightness(1.3);
+  }
+`;
+
+export const ToProjectLink = styled.a`
+  text-decoration: none;
+  margin-top: 4rem;
+  transition: filter 0.2s;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  svg {
+    color: ${(props) => props.theme.colors.green};
+    width: 4rem;
+    height: 4rem;
+    margin-left: 2rem;
+  }
+
+  span {
+    font: 400 1.8rem "Roboto", sans-serif;
+    color: ${(props) => props.theme.colors.text};
+    transition: color .2s;
+  }
+
+  :hover {
+    filter: brightness(1.3);
+  }
+
+  :hover > span {
+    color: ${(props) => props.theme.colors.green};
+  }
+
+  @media (max-width: 1170px) {
+    a {
+      margin-top: 0rem;
+    }
   }
 `;

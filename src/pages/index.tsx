@@ -6,8 +6,10 @@ import ButtonLinkList from "../components/ButtonLinkList";
 import Section from "../components/Section";
 import Article from "../components/Article";
 import Project from "../components/Project";
+import Portfolio from "../components/Portfolio";
 
 import ManAnalyzingDataURL from "../assets/man-analyzing-data.png";
+import RallyMotosMuralDigitalURL from "../assets/rally-motos-mural-digital.png";
 import AriusHelpLogoURL from "../assets/arius-help-logo.png";
 
 const Home: React.FC = () => {
@@ -60,10 +62,29 @@ const Home: React.FC = () => {
       />
 
       <Article
+        title="Conheça meu Portfólio"
+        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis dapibus dui, 
+          at lobortis lacus. Etiam vitae neque dui. Nullam pulvinar mattis tortor."
+      >
+        <Portfolio
+          title="Rally Motos - Mural Digital"
+          subtitle="Protótipagem, frontend e backend"
+          img_url={RallyMotosMuralDigitalURL}
+          text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis
+            dapibus dui, at lobortis lacus. Etiam vitae neque dui. Nullam
+            pulvinar mattis tortor. Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit. In quis dapibus dui, at lobortis lacus. Etiam
+            vitae neque dui. Nullam pulvinar mattis tortor."
+          portfolio_link="https://rallymotosmural.ml/"
+        />
+      </Article>
+
+      <Article
         title="Conheça meus projetos"
         text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis
         dapibus dui, at lobortis lacus. Etiam vitae neque dui. Nullam pulvinar
         mattis tortor."
+        isRight={true}
       >
         <Project
           title="Project Advisor 3000"
@@ -73,6 +94,7 @@ const Home: React.FC = () => {
             adipiscing elit. In quis dapibus dui, at lobortis lacus. Etiam
             vitae neque dui. Nullam pulvinar mattis tortor."
           img_url="https://raw.githubusercontent.com/EddyPBR/project-advisor-3000/master/frontend/src/assets/main-image.png"
+          project_link="https://www.google.com.br/"
         />
       </Article>
 

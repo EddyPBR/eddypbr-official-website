@@ -51,8 +51,6 @@ export const ContentColumn = styled.div`
   p {
     font-size: 1.6rem;
     margin-top: 2rem;
-    line-height: 2.8rem;
-    font-weight: 500;
   }
 
   // Change the Row styles

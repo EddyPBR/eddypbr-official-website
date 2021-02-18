@@ -14,7 +14,6 @@ export const SectionContent = styled.section`
 
   p {
     margin-top: 2rem;
-    line-height: 2.8rem;
   }
 
   a {

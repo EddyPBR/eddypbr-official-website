@@ -21,7 +21,6 @@ export const ArticleContent = styled.article<IArticleProps>`
   > p {
     margin-top: 1rem;
     max-width: 67rem;
-    line-height: 2.8rem;
     text-align: ${(props) => (props.isRight ? "right" : "left")};
   }
 

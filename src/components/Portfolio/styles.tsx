@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import NextLink from "next/link";
 
 export const PortfolioBox = styled.div`
   display: flex;

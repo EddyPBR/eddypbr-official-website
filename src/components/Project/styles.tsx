@@ -148,7 +148,7 @@ export const StyledNextLink = styled(NextLink)`
 
   span {
     font: 400 1.8rem "Roboto", sans-serif;
-    color: var(--color-grey);
+    color: ${(props) => props.theme.colors.text};
   }
 
   svg {

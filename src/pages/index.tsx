@@ -7,6 +7,7 @@ import Section from "../components/Section";
 import Article from "../components/Article";
 import Project from "../components/Project";
 import Portfolio from "../components/Portfolio";
+import Line from "../components/Line";
 
 import ManAnalyzingDataURL from "../assets/man-analyzing-data.png";
 import RallyMotosMuralDigitalURL from "../assets/rally-motos-mural-digital.png";
@@ -61,6 +62,8 @@ const Home: React.FC = () => {
         imageURL={ManAnalyzingDataURL}
       />
 
+      <Line margin={140} color="#0AC4FF" />
+
       <Article
         title="Conheça meu Portfólio"
         text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis dapibus dui, 
@@ -98,6 +101,8 @@ const Home: React.FC = () => {
         />
       </Article>
 
+      <Line margin={140} color="#823866" />
+
       <Section
         title="Árius Help Startup"
         text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis
@@ -110,6 +115,9 @@ const Home: React.FC = () => {
         isBlank={true}
         imageURL={AriusHelpLogoURL}
       />
+
+      <Line margin={140} color="#FF9E0D" />
+
     </>
   );
 };

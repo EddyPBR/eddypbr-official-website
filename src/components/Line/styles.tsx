@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 interface ILineProps {
   color?: string;
-  margin?: Number;
+  marginTop?: Number;
+  marginBottom?: Number;
 }
 
 export const LineStyle = styled.div<ILineProps>`
@@ -14,7 +15,8 @@ export const LineStyle = styled.div<ILineProps>`
     ${(props) => props.color || "#FFFFFF"} 0%,
     rgba(187, 84, 158, 0) 100%
   );
-  margin: ${(props) => `${props.margin}px` || 0} 0;
+  margin-top: ${(props) => `${props.marginTop}px` || 0};
+  margin-Bottom: ${(props) => `${props.marginBottom}px` || 0};
 `;
 
 export default LineStyle;

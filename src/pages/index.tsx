@@ -2,12 +2,14 @@ import React from "react";
 import Head from "next/head";
 
 import { Header, Container } from "../styles/pages/Home";
+
 import ButtonLinkList from "../components/ButtonLinkList";
+import Line from "../components/Line";
 import Section from "../components/Section";
 import Article from "../components/Article";
 import Project from "../components/Project";
 import Portfolio from "../components/Portfolio";
-import Line from "../components/Line";
+import Footer from "../components/Footer";
 
 import ManAnalyzingDataURL from "../assets/man-analyzing-data.png";
 import RallyMotosMuralDigitalURL from "../assets/rally-motos-mural-digital.png";
@@ -62,7 +64,7 @@ const Home: React.FC = () => {
         imageURL={ManAnalyzingDataURL}
       />
 
-      <Line margin={140} color="#0AC4FF" />
+      <Line marginTop={140} marginBottom={140} color="#0AC4FF" />
 
       <Article
         title="Conheça meu Portfólio"
@@ -101,7 +103,7 @@ const Home: React.FC = () => {
         />
       </Article>
 
-      <Line margin={140} color="#823866" />
+      <Line marginTop={140} marginBottom={140} color="#823866" />
 
       <Section
         title="Árius Help Startup"
@@ -116,7 +118,9 @@ const Home: React.FC = () => {
         imageURL={AriusHelpLogoURL}
       />
 
-      <Line margin={140} color="#FF9E0D" />
+      <Line marginTop={140} marginBottom={20} color="#FF9E0D" />
+
+      <Footer />
 
     </>
   );
